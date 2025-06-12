@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #000;
+}
+
+.navbar img {
+    width: 60px; /* reduce this value to make it smaller */
+    height: auto; /* maintains the image ratio */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu li {
+    cursor: pointer;
+}
+
+.nav-menu p,
+.nav-menu a {  /* Added anchor link styling to behave like <p> */
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    text-decoration: none; 
+    color: white; /* remove underline from anchor */
+   /* ensures link is same color as text */
+}
+
+.nav-menu p:hover,
+.nav-menu a:hover { /* Hover effect for both p and anchor */
+    color: purple;
+}
+
+/* Active (Clicked) Item */
+.nav-menu .active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(271deg, purple 15%, yellow 90%);
+    border-radius: 2px;
+}
+
+.nav-connect {
+    background: linear-gradient(271deg, purple 15%, yellow 180%);
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}

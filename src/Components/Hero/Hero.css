@@ -1,0 +1,63 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero img {
+    margin-top: 70px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    background: linear-gradient(271deg, purple 15%, yellow 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.hero-connect,
+.hero-resume {
+    padding: 10px 20px;
+    background: linear-gradient(271deg, purple 15%, yellow 170%);
+    border-radius: 25px;
+    cursor: pointer;
+    color: white; /* Optional: button text color */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    border: none; /* optional: remove border */
+    text-align: center;
+}
+
+.hero-connect:hover,
+.hero-resume:hover {
+    transform: scale(1.05);
+    /* Keep the same gradient on hover */
+    background: linear-gradient(271deg, purple 15%, yellow 100%);
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
